@@ -38,7 +38,7 @@
     "@ngraveio/bc-ur": "^1.1.13",
     "nostr-tools": "^2.13.0"
   },
-  "license": "AGPL-3.0",
+  "license": "MIT",
   "author": "baocommunity",
   "homepage": "https://github.com/baocommunity/cashu-wallet",
   "repository": {
