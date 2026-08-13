@@ -1,0 +1,57 @@
+{
+  "name": "@bao/cashu-wallet",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Cashu wallet utilities for ₿AO — backups, NIP-60 sync, mint fetch, payment requests.",
+  "exports": {
+    ".": {
+      "types": "./src/lib/cashu/index.ts",
+      "default": "./src/lib/cashu/index.ts"
+    },
+    "./cashu": {
+      "types": "./src/lib/cashu/cashu.ts",
+      "default": "./src/lib/cashu/cashu.ts"
+    },
+    "./backup": {
+      "types": "./src/lib/cashu/cashuBackup.ts",
+      "default": "./src/lib/cashu/cashuBackup.ts"
+    },
+    "./nip60": {
+      "types": "./src/lib/cashu/cashuNip60.ts",
+      "default": "./src/lib/cashu/cashuNip60.ts"
+    },
+    "./fetch": {
+      "types": "./src/lib/cashu/cashuFetch.ts",
+      "default": "./src/lib/cashu/cashuFetch.ts"
+    },
+    "./requests": {
+      "types": "./src/lib/cashu/cashuRequests.ts",
+      "default": "./src/lib/cashu/cashuRequests.ts"
+    }
+  },
+  "dependencies": {
+    "@cashu/cashu-ts": "^2.9.0",
+    "@noble/curves": "^2.2.0",
+    "@noble/hashes": "^2.2.0",
+    "@nostrify/nostrify": "^0.53.0",
+    "@nostrify/types": "^0.37.0",
+    "@ngraveio/bc-ur": "^1.1.13",
+    "nostr-tools": "^2.13.0"
+  },
+  "license": "AGPL-3.0",
+  "author": "baocommunity",
+  "homepage": "https://github.com/baocommunity/cashu-wallet",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/baocommunity/cashu-wallet.git"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.1",
+    "typescript": "^5.7.2",
+    "@types/node": "^22.0.0"
+  }
+}
