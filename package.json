@@ -8,6 +8,14 @@
       "types": "./src/lib/cashu/index.ts",
       "default": "./src/lib/cashu/index.ts"
     },
+    "./baoFaucet": {
+      "types": "./src/lib/cashu/baoFaucet.ts",
+      "default": "./src/lib/cashu/baoFaucet.ts"
+    },
+    "./base64": {
+      "types": "./src/lib/cashu/base64.ts",
+      "default": "./src/lib/cashu/base64.ts"
+    },
     "./cashu": {
       "types": "./src/lib/cashu/cashu.ts",
       "default": "./src/lib/cashu/cashu.ts"
@@ -16,7 +24,15 @@
       "types": "./src/lib/cashu/cashuBackup.ts",
       "default": "./src/lib/cashu/cashuBackup.ts"
     },
+    "./cashuBackup": {
+      "types": "./src/lib/cashu/cashuBackup.ts",
+      "default": "./src/lib/cashu/cashuBackup.ts"
+    },
     "./nip60": {
+      "types": "./src/lib/cashu/cashuNip60.ts",
+      "default": "./src/lib/cashu/cashuNip60.ts"
+    },
+    "./cashuNip60": {
       "types": "./src/lib/cashu/cashuNip60.ts",
       "default": "./src/lib/cashu/cashuNip60.ts"
     },
@@ -24,9 +40,45 @@
       "types": "./src/lib/cashu/cashuFetch.ts",
       "default": "./src/lib/cashu/cashuFetch.ts"
     },
+    "./cashuFetch": {
+      "types": "./src/lib/cashu/cashuFetch.ts",
+      "default": "./src/lib/cashu/cashuFetch.ts"
+    },
     "./requests": {
       "types": "./src/lib/cashu/cashuRequests.ts",
       "default": "./src/lib/cashu/cashuRequests.ts"
+    },
+    "./cashuRequests": {
+      "types": "./src/lib/cashu/cashuRequests.ts",
+      "default": "./src/lib/cashu/cashuRequests.ts"
+    },
+    "./devLog": {
+      "types": "./src/lib/cashu/devLog.ts",
+      "default": "./src/lib/cashu/devLog.ts"
+    },
+    "./escrowMultisig": {
+      "types": "./src/lib/cashu/escrowMultisig.ts",
+      "default": "./src/lib/cashu/escrowMultisig.ts"
+    },
+    "./nip87": {
+      "types": "./src/lib/cashu/nip87.ts",
+      "default": "./src/lib/cashu/nip87.ts"
+    },
+    "./nut15": {
+      "types": "./src/lib/cashu/nut15.ts",
+      "default": "./src/lib/cashu/nut15.ts"
+    },
+    "./nut16": {
+      "types": "./src/lib/cashu/nut16.ts",
+      "default": "./src/lib/cashu/nut16.ts"
+    },
+    "./nut27": {
+      "types": "./src/lib/cashu/nut27.ts",
+      "default": "./src/lib/cashu/nut27.ts"
+    },
+    "./storage": {
+      "types": "./src/lib/cashu/storage.ts",
+      "default": "./src/lib/cashu/storage.ts"
     }
   },
   "dependencies": {
