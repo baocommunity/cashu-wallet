@@ -8,7 +8,7 @@ import {
   groupRecommendationsByUrl,
   buildMintRecommendationEvent,
   type CashuMintRecommendation,
-} from '@/lib/cashu/nip87';
+} from './nip87';
 import type { NostrEvent } from '@nostrify/nostrify';
 
 function makeEvent(overrides: Partial<NostrEvent>): NostrEvent {

@@ -8,8 +8,8 @@
  *   - rejects 3xx responses before any response body is read,
  *   - attaches a per-request abort timeout so network calls cannot hang forever.
  */
-import { isAllowedMintUrl } from '@/lib/cashu/cashu';
-import { devLog } from '@/lib/cashu/devLog';
+import { isAllowedMintUrl } from './cashu';
+import { devLog } from './devLog';
 
 export type MintRequestOptions = {
   endpoint: string;

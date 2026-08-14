@@ -1,7 +1,7 @@
 import type { NostrEvent } from '@nostrify/nostrify';
 
-import { normalizeMintUrl } from '@/lib/cashu/cashu';
-import { sanitizeUrl } from '@/lib/sanitizeUrl';
+import { normalizeMintUrl } from './cashu';
+import { sanitizeUrl } from '../sanitizeUrl';
 
 /** Cashu mint announcement event kind (NIP-87). */
 export const CASHU_MINT_ANNOUNCEMENT_KIND = 38172;

@@ -1,4 +1,4 @@
-import { devLog } from '@/lib/cashu/devLog';
+import { devLog } from './devLog';
 
 export interface BaoFaucetRequest {
   /** User npub to associate with the faucet grant. */

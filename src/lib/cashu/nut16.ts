@@ -1,7 +1,7 @@
 import { Buffer } from 'buffer';
 import { UR, URDecoder, UREncoder } from '@ngraveio/bc-ur';
 
-import { decodeCashuToken } from '@/lib/cashu/cashu';
+import { decodeCashuToken } from './cashu';
 
 export const CASHU_UR_PREFIX = 'ur:bytes/';
 export const CASHU_UR_FRAGMENT_LENGTH = 200;

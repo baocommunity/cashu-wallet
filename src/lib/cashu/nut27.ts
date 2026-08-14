@@ -3,8 +3,8 @@ import { sha256 } from '@noble/hashes/sha2.js';
 import { getPublicKey } from 'nostr-tools';
 import type { NostrEvent, NostrFilter } from '@nostrify/nostrify';
 
-import { createNip60Signer, type Nip60SyncApi } from '@/lib/cashu/cashuNip60';
-import { isAllowedMintUrl, safeNormalizeMintUrl } from '@/lib/cashu/cashu';
+import { createNip60Signer, type Nip60SyncApi } from './cashuNip60';
+import { isAllowedMintUrl, safeNormalizeMintUrl } from './cashu';
 
 export const NUT27_KIND = 30078;
 export const NUT27_D_TAG = 'mint-list';

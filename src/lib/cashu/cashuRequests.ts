@@ -1,7 +1,7 @@
 import { getDecodedToken, PaymentRequest } from '@cashu/cashu-ts';
 import type { Proof } from '@cashu/cashu-ts';
 
-import { devLog } from '@/lib/cashu/devLog';
+import { devLog } from './devLog';
 
 /**
  * NUT-18 Cashu Payment Request payload delivered over a Nostr DM.

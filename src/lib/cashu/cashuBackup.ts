@@ -10,7 +10,7 @@ import { SimplePool, verifyEvent, type Event } from 'nostr-tools';
 import type { NostrSigner } from '@nostrify/types';
 import { sha256 } from '@noble/hashes/sha2.js';
 import { bytesToHex } from '@noble/curves/utils.js';
-import { devLog } from '@/lib/cashu/devLog';
+import { devLog } from './devLog';
 
 export const BACKUP_KIND = 30078;
 /** Legacy public d-tag. Kept only as a read fallback for migration. */

@@ -16,8 +16,8 @@ import { hexToBytes, bytesToNumberBE, bytesToHex } from '@noble/curves/utils.js'
 import { hkdf } from '@noble/hashes/hkdf.js';
 import { sha256 } from '@noble/hashes/sha2.js';
 import { getPublicKey } from 'nostr-tools';
-import { bytesToBase64, base64ToBytes } from '@/lib/cashu/base64';
-import { devLog } from '@/lib/cashu/devLog';
+import { bytesToBase64, base64ToBytes } from './base64';
+import { devLog } from './devLog';
 
 export const DEFAULT_MINTS = [
   { name: 'Mint.btcforplebs', url: 'https://mint.btcforplebs.com' },

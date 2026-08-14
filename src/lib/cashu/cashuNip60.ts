@@ -19,8 +19,8 @@ import type { NostrEvent } from '@nostrify/nostrify';
 import type { NostrFilter } from '@nostrify/nostrify';
 import type { NostrSigner } from '@nostrify/types';
 
-import { devLog } from '@/lib/cashu/devLog';
-import { normalizeMintUrl, encryptData, decryptData } from '@/lib/cashu/cashu';
+import { devLog } from './devLog';
+import { normalizeMintUrl, encryptData, decryptData } from './cashu';
 
 export const WALLET_CONFIG_KIND = 17375;
 export const TOKEN_KIND = 7375;

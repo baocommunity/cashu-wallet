@@ -11,10 +11,10 @@ import {
   PROOF_CONTEXT_PREFIX,
   TRANSACTION_CONTEXT,
   MAX_PROOF_FIELD_LENGTH,
-} from '@/lib/cashu/cashu';
-import { devLog } from '@/lib/cashu/devLog';
+} from './cashu';
+import { devLog } from './devLog';
 
-import { stringToBase64 } from '@/lib/cashu/base64';
+import { stringToBase64 } from './base64';
 import type { NostrEvent } from '@nostrify/nostrify';
 
 /* ── Recovery helpers (moved from useCashuWallet for namespacing) ── */
