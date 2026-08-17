@@ -52,6 +52,20 @@ export interface CashuUrScanProgress {
 
 /** Stateful, bounded NUT-16 decoder. Use one instance per scanner dialog so
  * fragments from separate transfers can never mix. */
+/** bc-ur's cborDecode returns our byte string either as a Buffer, a
+ * Uint8Array, or (some versions) as a serialized `{ type: 'Buffer', data: [] }`
+ * object. Normalize all three to a plain Uint8Array. */
+function urBytesOf(decoded: unknown): Uint8Array {
+  if (decoded instanceof Uint8Array) return decoded;
+  if (typeof Buffer !== 'undefined' && Buffer.isBuffer(decoded)) return new Uint8Array(decoded);
+  if (decoded && typeof decoded === 'object') {
+    const obj = decoded as { data?: unknown };
+    if (obj.data instanceof Uint8Array) return obj.data;
+    if (Array.isArray(obj.data)) return new Uint8Array(obj.data as number[]);
+  }
+  return new Uint8Array(0);
+}
+
 export class CashuUrDecoder {
   private readonly decoder = new URDecoder();
   private readonly startedAt = Date.now();
@@ -80,7 +94,7 @@ export class CashuUrDecoder {
       throw new Error(this.decoder.resultError() || 'Animated QR could not be decoded.');
     }
 
-    const bytes = this.decoder.resultUR().decodeCBOR();
+    const bytes = urBytesOf(this.decoder.resultUR().decodeCBOR());
     if (bytes.byteLength > CASHU_UR_MAX_TOKEN_BYTES) {
       throw new Error('Decoded Cashu token exceeds the safe size limit.');
     }
