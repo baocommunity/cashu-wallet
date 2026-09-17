@@ -4,4 +4,4 @@ Cashu wallet utilities for ₿AO — backups, NIP-60 sync, mint fetch, payment r
 
 ## License
 
-MIT — see `LICENSE.txt`.
+AGPL-3.0 — see `LICENSE.txt`.
